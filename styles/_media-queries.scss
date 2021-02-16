@@ -1,0 +1,85 @@
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
+    nav {
+        ul {
+            li {
+                margin-left: 5rem;
+            }
+        }
+    }
+    .showcase {
+        grid-template-columns: 10% 1fr 10%;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+        img, h2, .info {
+            grid-column: 2/3;
+            text-align: center;
+        }
+    }
+    .features {
+        align-items: center;
+        h2 {
+            margin-top: 5rem;
+        }
+        .cards {
+            width: 100%;
+            margin: 5rem 0rem;
+        }
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1199px) {
+    .features-container {
+        .wave {
+            display: none;
+        }
+    }
+    
+    .features {
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            height: 150%;
+            grid-gap: 15px;
+        }
+    }
+}
+
+@media (min-width: 200px) and (max-width: 850px) {
+    .features {
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-gap: 15px;
+            .card {
+                height: 80%;
+            }
+        }
+    }
+
+    .showcase {
+        img {
+            width: 160%;
+        }
+    }
+
+    .soon {
+        h2 {
+            width: 70%;
+            font-size: 5em;
+            margin-left: 1.2em;
+            margin-top: 0.5em;
+        }
+        .camera-soon {
+            height: 70%;
+            margin-left: 2em;
+        }
+        .circle {
+            height: 75%;
+        }
+    }
+}
